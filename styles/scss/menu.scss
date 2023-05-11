@@ -1,0 +1,134 @@
+.bottom-header{
+    padding:15px 0;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: whitesmoke;
+    ul{
+        display: flex;
+        justify-content: space-around;
+        @include ulStyle;
+        font-size: 0.7rem;
+        width: 35%;
+        // margin-left: -20px !important;
+    }
+    
+}
+.menu {
+    display: flex;
+   .left-menu{
+        width: 25%;
+        ul{
+            font-size: 0.9rem;
+            color: $starBuckDoveGrey;
+            @include ulStyle;
+            h6 {
+                color: black !important;
+            }
+            li{
+                line-height: 3;
+            }
+        }
+   }
+   .right-menu{
+    padding-top: 20px;
+    width: 40%;
+    img{
+        @include menuImg;
+    }
+    .drinks{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        // width: 100%;
+        .drinks_left{
+            width: 50%;
+        }
+        .drinks_right{
+            width: 50%;
+        }
+    }
+    .food{
+        display: flex;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        // width: 90%;
+        .food_left{
+            width: 50%;
+        }
+        .food_right{
+            width: 50%;
+        }
+    }
+    .coffee{
+        display: flex;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        .coffee_left{
+            width: 50%;
+        }
+        .coffee_right{
+            width: 50%;
+        }
+
+    }
+    .merchandise{
+        display: flex;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        
+        .merchandise_left{
+            width: 50%;
+        }
+        .merchandise_right{
+            width: 50%;
+        }
+    }
+    .giftcard{
+        display: flex;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        
+        .gift_left{
+            width: 50%;
+        }
+        .gift_right{
+            width: 50%;
+        }
+    }
+   }
+}
+
+
+.store-locator{
+    position:fixed;
+    bottom: 0;
+    width: 100vw;
+    background-color: $starBuckDarkGreen;
+    padding: 20px;
+    color:white ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    .store-locator__3{
+        border-bottom: 1px solid $starBuckSilver;
+        gap: 70px;
+    }
+    div{
+        
+        .firstspan{
+            font-size: 0.9rem;
+            color: $starBuckSilver;
+        }
+        .choose{
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .fa-chevron-down{
+            color:white;
+        }
+    }
+    
+}

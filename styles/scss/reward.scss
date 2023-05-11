@@ -1,0 +1,269 @@
+.bottom-header_reward{
+    padding:15px 0;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: $starBuckDarkGreen;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    font-size: 0.8rem;
+}
+.star{
+    background-image: url("/images/reward\ background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 70vh;
+    position: relative;
+}
+.star_inner{
+    width: 25%;
+    position: absolute;
+    top:25%;
+    left: 10%;
+    margin-bottom: 30px;
+    button{
+        border-radius: 20px;
+        padding: 5px 15px;
+        background-color: $starBuckGreen;
+        color: white;
+        border: none;
+    }
+    a{
+        text-decoration: underline !important;
+    }
+}
+.getting_start{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin-top: 30px;
+}
+.getting_start-inner{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    .div-1, .div-2, .div-3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 25%;
+        text-align: center;
+        div{
+            @include justifyCenter;
+            align-items: center;
+            padding: 10px;
+            border: 2px solid $starBuckGreen;
+            color: $starBuckGreen;
+            font-size: 1.4rem;
+            font-weight: 500;
+            border-radius: 50%;
+            width: 45px;
+            height: 45px;
+        }
+        p{
+            a{
+                text-decoration: underline!important;
+                color: $starBuckGreen!important;
+            }
+        }
+    }
+}
+
+//  ---------------------------------------------js 
+
+
+.star_rate{
+    width: 100%;
+    height: 50vh;
+    @include justifyCenter;
+    flex-direction: column;
+   .star_rate-inner {
+    padding: 60px 0 10px;
+    text-align: center;
+    background-color: $starBuckCeramic;
+
+    .active{
+        border-bottom: 3px solid $starBuckDarkGreen!important;
+        visibility: visible;
+    }
+    h4 {
+        font-weight: 600;
+        margin-bottom: 40px;
+    }
+     button {
+        margin: 0 10px;
+        border: none;
+        background-color: transparent;
+        :first-child{
+            font-size: 1.5rem;  
+        }
+        span {
+            i{
+                color: goldenrod ;
+                font-size: 0.8rem !important;
+            }
+        }
+     }
+    }
+    .star_rate-picture {
+        background-color:$starBucklightgreen ;
+        height: 25vh;
+        display: flex;
+        align-items: center;
+        .star_rate-content{
+            max-width: 50%;
+            display: flex;
+            justify-content: space-around;
+            visibility: hidden;
+            .r_picture{
+                display: flex;
+                justify-content: flex-end;
+                width: 30%;
+                img{
+                    width: -250px;
+                    height: 150px;
+                }
+            }
+            .r_text{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                width: 30%;
+            }
+        }
+
+    }
+}
+
+
+// -----------------------------------------------------------------------
+.extras {
+    @include justifyCenter;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+    a{
+        text-decoration: underline!important;
+        color: $starBuckGreen !important;
+    }
+    .extras_header{
+        text-align: center;
+        width: 50vw;
+        margin-bottom: 30px;
+    }
+    .extras_content{
+        @include justifyCenter;
+        text-align: center;
+        gap: 30px;
+        h6{
+            font-weight: 600;
+            line-height: 2;
+        }
+        .e_div-1{
+            @include justifyCenter;
+            flex-direction: column;
+            width: 30%;
+            div{
+                font-size: .9rem;
+            }
+        }
+        .e_div-2{
+            @include justifyCenter;
+            flex-direction: column;
+            width: 30%;
+            div{
+                font-size: .9rem;
+            }
+        }
+        .e_div-3{
+            @include justifyCenter;
+            flex-direction: column;
+            width: 30%;
+            div{
+                font-size: .9rem;
+            }
+        }
+    }
+}
+.cash-card{
+    flex-direction: column;
+    background-color: $starBuckGoldLightest;
+    padding: 30px 0;
+    height: auto;
+
+    h6{
+        font-weight: 600;
+    }
+    .cash_header {
+        width: 40vw;
+        margin-bottom: 40px;
+    }
+    .cash_middle{
+        margin-top: 40px;
+        margin-bottom: 40px;
+        justify-content: space-between;
+        img{
+            height: 150px;
+            width: 110px;
+        }
+        .d-flex{
+            width: 35%;
+            gap: 20px;
+        }
+    }
+    .cash_bottom {
+        margin-top: 40px;
+        justify-content: space-between;
+        img{
+            height: 150px;
+            width: 110px;
+        }
+        .d-flex{
+            width: 35%;
+            gap: 20px;
+        }
+    }
+}
+.questions {
+    @include justifyCenter;
+    align-items: center;
+    height: 35vh;
+    a{
+        text-decoration: underline!important;
+        color: $starBuckGreen!important;
+        font-size: 0.8rem!important;
+    }
+    .q_inner{
+         max-width: 50vw;
+    }
+}
+.info_head-container{
+    background-color: $starBuckCeramic;
+    padding: 30px 0;
+    .information{
+        h6{
+            font-size: 0.9rem;
+        }
+        font-size: 0.8rem;
+        a{
+            text-decoration: underline!important;
+            color: $starBuckGreen!important;
+            font-size: 0.8rem!important;
+        }
+    }
+
+}
+
+
