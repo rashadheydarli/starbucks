@@ -87,8 +87,8 @@
     text-align: center;
     background-color: $starBuckCeramic;
 
-    .active{
-        border-bottom: 3px solid $starBuckDarkGreen!important;
+    .active {
+        border-bottom: 4px solid $starBuckDarkGreen!important;
         visibility: visible;
     }
     h4 {
@@ -119,7 +119,7 @@
             max-width: 50%;
             display: flex;
             justify-content: space-around;
-            visibility: hidden;
+            // visibility: hidden;
             .r_picture{
                 display: flex;
                 justify-content: flex-end;

@@ -1,0 +1,47 @@
+.map-content {
+    height: 92vh;
+    .map-content_inner{
+        width: 35%;
+        flex-direction: column;
+        margin-bottom: 10%;
+        margin-right: 20px;
+        .search-store{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            form {
+                border-bottom: 1px solid $starBuckDoveGrey;
+                
+                input{
+                    padding: 5px;
+                    border: none;
+                    outline: none;
+                }
+                button{
+                    border: none;
+                    background-color: transparent;
+                    color: $starBuckGrey;
+                    
+                }
+            }
+            button {
+                color: $starBuckGreen;
+                border: 1px solid $starBuckGreen;
+                background-color: transparent;
+                border-radius: 20px;
+                padding: 3px 15px;
+                font-weight: 500;
+                
+            }
+        }
+        .search-store_middle{
+            p{
+                color: $starBuckDoveGrey;
+            }
+        }
+        .search-store_bottom{
+            color: $starBuckGreen;
+            line-height: 2.5;
+        }
+    }
+}
