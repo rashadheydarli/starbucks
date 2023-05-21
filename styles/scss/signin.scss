@@ -7,7 +7,6 @@
         h4 {
             font-weight: 700;
         }
-
     }
     
     .container-ch {
@@ -18,7 +17,50 @@
             font-size: 1rem;
             line-height: 2;
         }
+       
+        // input[type="checkbox"] {
+        //     position: relative;
+        //     width: 1.5em;
+        //     height: 1.5em;
+        //     color: white;
+        //     border: 1px solid $starBuckGreen;
+        //     border-radius: 6px;
+        //     appearance: none;
+        //     outline: 0;
+        //     margin-right:10px;
+        //     cursor: pointer;
+        //     &::before {
+        //       position: absolute;
+        //       content: '';
+        //       display: block;
+        //       top: 4px;
+        //       left: 9px;
+        //       width: 8px;
+        //       height: 14px;
+        //       border-style: solid;
+        //       border-color: white;
+        //       border-width: 0 2px 2px 0;
+        //       transform: rotate(45deg);
+        //       opacity: 0;
+        //     }
+        //     &:checked {
+        //       color: white;
+        //       border-color: $starBuckGreen;
+        //       background: $starBuckGreen;
+        //       &::before {
+        //         opacity: 1;
+        //       }
+        //     }
+        //   }
+        //   span {
+        //     color: black!important;
+        //     font-size: 1rem;
+        //     font-weight: 400;
+        // }
     }
+    
+        
+    
     .links {
         a {
             color: $starBuckGreen!important;
@@ -36,6 +78,7 @@
     align-items: center;
     text-align: center;
     margin-bottom: 100px;
+    
     h6{
         color: $starBuckGreen;
         font-size: .9rem;

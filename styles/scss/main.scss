@@ -6,6 +6,7 @@
 @import "map.scss";
 @import "joinnow.scss";
 @import "signin.scss";
+@import "backup.scss";
 body{
     margin: 0;
     padding: 0;
@@ -66,6 +67,12 @@ header {
                 background-color: $starBuckGrey;
                 color:white;
         }
+        .h-join {
+            a{
+                color: white !important;
+
+            }
+    }
     }
 }
 .main {
@@ -214,6 +221,7 @@ footer {
     nav{
         border-bottom: 2px solid $lightgreyy;
         margin-bottom: 20px;
+        justify-content: space-between;
         .nav_div{
             width: 17%;
             overflow-wrap: break-word;
@@ -224,17 +232,18 @@ footer {
         padding-top: 15px;
         ul{
             padding: 0;
-            line-height: 2.3;
             :hover {
                 color: black;
             }
         }
-        ul>li {
+        ul{
+            li {
             @include ulStyle;
             color: $starBuckDoveGrey;
             cursor: pointer;
             word-wrap: wrap;
-            
+            margin-bottom: 20px;
+        }
         }
     }
     .social-ul {

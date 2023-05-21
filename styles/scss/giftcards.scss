@@ -12,8 +12,7 @@ body {
     .swiper-slide {
         width: 100%;
         margin: 0 20px;
-        display: flex;
-        justify-content: center;
+        @include justifyCenter;
         align-items: center;
         gap: 20px;
         img {
@@ -43,14 +42,15 @@ body {
 //   }
 
 
-//   .swiper-button-next, .swiper-button-prev{
-//     width: 30px;
-//     height: 30px;;
-//     background-color: #f3f3f3ff;
-//     color: black;
-//     font-size: 25px!important;
-//     border-radius: 50%;
-//   }
+  .swiper-button-next, .swiper-button-prev{
+    // width: 30px;
+    // height: 30px;;
+    // background-color: #f3f3f3ff;
+    color: black;
+    font-size: 25px!important;
+    border-radius: 50%;
+
+  }
 
 .middle-container {
   background-color: $starBucklightgreen;
@@ -86,7 +86,9 @@ body {
   .middle-container_right {
     @include justifyCenter;
     align-items: center;
-    color: $starBuckDarkGreen;
+    span {
+      color: $starBuckDarkGreen!important;
+    }
   }
 }
 .bulk-container {
@@ -139,4 +141,5 @@ body {
     }
     
 }
+
 

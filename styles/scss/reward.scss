@@ -10,10 +10,11 @@
     font-size: 0.8rem;
 }
 .star{
-    background-image: url("/images/reward\ background.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
     width: 100%;
     height: 70vh;
     position: relative;

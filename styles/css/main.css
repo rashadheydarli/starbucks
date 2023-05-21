@@ -36,7 +36,7 @@
 }
 .menu .right-menu {
   padding-top: 20px;
-  width: 40%;
+  width: 50%;
 }
 .menu .right-menu img {
   width: 100px;
@@ -52,54 +52,58 @@
   margin-bottom: 30px;
 }
 .menu .right-menu .drinks .drinks_left {
-  width: 50%;
+  width: 40%;
 }
 .menu .right-menu .drinks .drinks_right {
-  width: 50%;
+  width: 40%;
 }
 .menu .right-menu .food {
   display: flex;
+  justify-content: space-between;
   margin-top: 30px;
   margin-bottom: 30px;
 }
 .menu .right-menu .food .food_left {
-  width: 50%;
+  width: 40%;
 }
 .menu .right-menu .food .food_right {
-  width: 50%;
+  width: 40%;
 }
 .menu .right-menu .coffee {
   display: flex;
+  justify-content: space-between;
   margin-top: 30px;
   margin-bottom: 30px;
 }
 .menu .right-menu .coffee .coffee_left {
-  width: 50%;
+  width: 40%;
 }
 .menu .right-menu .coffee .coffee_right {
-  width: 50%;
+  width: 40%;
 }
 .menu .right-menu .merchandise {
   display: flex;
+  justify-content: space-between;
   margin-top: 30px;
   margin-bottom: 30px;
 }
 .menu .right-menu .merchandise .merchandise_left {
-  width: 50%;
+  width: 40%;
 }
 .menu .right-menu .merchandise .merchandise_right {
-  width: 50%;
+  width: 40%;
 }
 .menu .right-menu .giftcard {
   display: flex;
+  justify-content: space-between;
   margin-top: 30px;
   margin-bottom: 30px;
 }
 .menu .right-menu .giftcard .gift_left {
-  width: 50%;
+  width: 40%;
 }
 .menu .right-menu .giftcard .gift_right {
-  width: 50%;
+  width: 40%;
 }
 
 .store-locator {
@@ -142,13 +146,14 @@
 }
 
 .star {
-  background-image: url("/images/reward background.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   width: 100%;
   height: 70vh;
   position: relative;
+}
+.star img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .star_inner {
@@ -434,6 +439,12 @@ body {
   width: 80%;
 }
 
+.swiper-button-next, .swiper-button-prev {
+  color: black;
+  font-size: 25px !important;
+  border-radius: 50%;
+}
+
 .middle-container {
   background-color: #d4e9e2;
   padding: 40px;
@@ -470,7 +481,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #1e3932;
+}
+.middle-container .middle-container_right span {
+  color: #1e3932 !important;
 }
 
 .bulk-container {
@@ -571,7 +584,7 @@ body {
   margin-top: 20px;
   padding: 20px;
   border-radius: 20px;
-  /* Style the checkmark/indicator */
+  @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:600&display=swap");
 }
 .form-container .form-container_inner {
   padding: 20px;
@@ -627,63 +640,64 @@ body {
   padding: 15px 20px !important;
   width: 300px;
 }
-.form-container .container-ch {
-  display: block;
+.form-container .container-ch input[type=checkbox] {
   position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 22px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  /* Hide the browser's default checkbox */
-  /* Create a custom checkbox */
-  /* On mouse-over, add a grey background color */
-  /* When the checkbox is checked, add a blue background */
-  /* Create the checkmark/indicator (hidden when not checked) */
-  /* Show the checkmark when checked */
-}
-.form-container .container-ch .container-ch input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-.form-container .container-ch .checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: #eee;
-}
-.form-container .container-ch .container-ch:hover input ~ .checkmark {
-  background-color: #ccc;
-}
-.form-container .container-ch .container-ch input:checked ~ .checkmark {
-  background-color: #00754a;
-}
-.form-container .container-ch .checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-.form-container .container-ch .container-ch input:checked ~ .checkmark:after {
-  display: block;
-}
-.form-container .container-ch .container-ch .checkmark:after {
-  left: 9px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
+  width: 1.5em;
+  height: 1.5em;
+  color: white;
   border: 1px solid #00754a;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
+  border-radius: 6px;
+  appearance: none;
+  outline: 0;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.form-container .container-ch input[type=checkbox]::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 4px;
+  left: 9px;
+  width: 8px;
+  height: 14px;
+  border-style: solid;
+  border-color: white;
+  border-width: 0 2px 2px 0;
   transform: rotate(45deg);
+  opacity: 0;
+}
+.form-container .container-ch input[type=checkbox]:checked {
+  color: white;
+  border-color: #00754a;
+  background: #00754a;
+}
+.form-container .container-ch input[type=checkbox]:checked::before {
+  opacity: 1;
+}
+.form-container .container-ch span {
+  color: black !important;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.form-container .know-about {
+  margin: 20px 0 40px 40px;
+  font-size: 1rem;
+  color: #898787;
+  width: 300px;
+}
+.form-container .terms-of-use {
+  width: 300px;
+  margin-bottom: 30px;
+}
+.form-container .terms-of-use a {
+  font-weight: 500;
+  font-size: 1rem;
+}
+.form-container .terms {
+  color: #898787 !important;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
 }
 
 .form-header {
@@ -736,6 +750,21 @@ body {
   border-radius: 20px;
   padding: 3px 12px !important;
   width: 100px;
+}
+
+.owl-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.owl-carousel .item {
+  height: 300px;
+  width: 400px;
+}
+.owl-carousel .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 body {
@@ -796,6 +825,9 @@ header .header__right .h__signin:hover {
 header .header__right .h-join:hover {
   background-color: #585858;
   color: white;
+}
+header .header__right .h-join a {
+  color: white !important;
 }
 
 .main {
@@ -946,6 +978,7 @@ header .header__right .h-join:hover {
 footer nav {
   border-bottom: 2px solid #e3e3e3;
   margin-bottom: 20px;
+  justify-content: space-between;
   padding-top: 15px;
 }
 footer nav .nav_div {
@@ -957,18 +990,18 @@ footer nav h6 {
 }
 footer nav ul {
   padding: 0;
-  line-height: 2.3;
 }
 footer nav ul :hover {
   color: black;
 }
-footer nav ul > li {
+footer nav ul li {
   margin: 0;
   padding: 0;
   list-style-type: none;
   color: #898787;
   cursor: pointer;
   word-wrap: wrap;
+  margin-bottom: 20px;
 }
 footer .social-ul {
   margin-top: 30px;

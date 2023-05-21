@@ -32,7 +32,9 @@
    }
    .right-menu{
     padding-top: 20px;
-    width: 40%;
+    // width: 40%;
+    width: 50%;
+
     img{
         @include menuImg;
     }
@@ -43,58 +45,62 @@
         margin-bottom: 30px;
         // width: 100%;
         .drinks_left{
-            width: 50%;
+            width: 40%;
         }
         .drinks_right{
-            width: 50%;
+            width: 40%;
         }
     }
     .food{
         display: flex;
+        justify-content: space-between;
         margin-top: 30px;
         margin-bottom: 30px;
         // width: 90%;
         .food_left{
-            width: 50%;
+            width: 40%;
         }
         .food_right{
-            width: 50%;
+            width: 40%;
         }
     }
     .coffee{
         display: flex;
+        justify-content: space-between;
         margin-top: 30px;
         margin-bottom: 30px;
         .coffee_left{
-            width: 50%;
+            width: 40%;
         }
         .coffee_right{
-            width: 50%;
+            width: 40%;
         }
 
     }
     .merchandise{
         display: flex;
+        justify-content: space-between;
         margin-top: 30px;
         margin-bottom: 30px;
         
         .merchandise_left{
-            width: 50%;
+            width: 40%;
         }
         .merchandise_right{
-            width: 50%;
+            width: 40%;
         }
     }
     .giftcard{
         display: flex;
+        justify-content: space-between;
         margin-top: 30px;
         margin-bottom: 30px;
         
         .gift_left{
-            width: 50%;
+            width: 40%;
         }
         .gift_right{
-            width: 50%;
+            width: 40%;
         }
     }
    }
